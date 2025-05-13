@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contattami</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary shadow sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/sigla_cm.png" alt="CM" width="55">
+        </a>
+        <div class="navbar-link justify-content-end" role="navigation"><!--Con lo span, il menù si sposta verso destra/This moves the section on the right side of the page-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarlinks" aria-controls="navbarlinks" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-book"></i><!--Icona personalizzata/Custom toggle icon-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarlinks">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Chi sono</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">Curriculum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Progetti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacts.html" aria-current="page">Contattami!</a><!--La pagina è active/This page is active-->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <!--Fine della navbar/End of navbar-->
+
+  <!--Contenuto principale della pagina/Main content of the page-->
+  <div class="page">
+
+    <!--Immagine titolo di pagina/Image used as page heading-->
+    <div class="text-center mx-auto pb-5 mb-3 title title--contacts">
+      <img src="assets/img/5.svg" alt="Contattami!" class="img-fluid title__image" aria-label="heading" role="heading">
+    </div>
+    <!--Fine immagine usata come titolo/End of image used as heading-->
+
+    <!--Inizio del form/Form start-->
+    <div class="col-8 col-lg-4 mx-auto mb-5">
+      <form action="https://formsubmit.co/83c45f5098ac9cd6f38989601d410a52" method="POST" id="contact-form" class="info-form needs-validation" novalidate>
+        <input type="hidden" name="_subject" value="Hai un nuovo messaggio!">
+        <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+
+        <div class="mx-auto mb-3"><!--Input nome e cognome di chi contatta/Input for name and surname of who's submitting the form-->
+          <label for="name" class="form-label"><span class="required-star">*</span> Nome e cognome</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Nome completo" aria-label="Nome e cognome" required>
+          <div class="invalid-feedback">Per favore, inserisci qui il tuo nome completo</div>
+        </div>
+  
+        <div class="mx-auto mb-3"><!--Input nome azienda/Input for company name-->
+          <label for="company" class="form-label"><span class="required-star">*</span> Azienda</label>
+          <input type="text" class="form-control" id="company" name="company" placeholder="Nome azienda" aria-label="Azienda" required>
+          <div class="invalid-feedback">Per favore, inserisci qui il nome dell&lsquo;azienda</div>
+        </div>
+  
+        <div class="mx-auto mb-3"><!--Input indirizzo email/Input for email address of who's submitting the form-->
+          <label for="email" class="form-label"><span class="required-star">*</span> Indirizzo e-mail</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="esempio@email.com" aria-label="email" required>
+          <div class="invalid-feedback">Per favore, inserisci un indirizzo e-mail valido</div>
+        </div>
+  
+        <div class="mx-auto mb-3"><!--Input posizione ricercata/Input for the description of the searched position-->
+          <label for="position" class="form-label">Posizione ricercata</label>
+          <input type="text" class="form-control" id="position" name="position" placeholder="Posizione" aria-label="Posizione">
+        </div>
+  
+        <div class="mx-auto mb-3"><!--Input data di inizio disponibilità/Input for starting position date-->
+          <label for="date" class="form-label">Data di inizio disponibilità</label>
+          <input type="date" class="form-control form-control-date" id="date" name="date">
+        </div>
+
+        <div class="mx-auto mb-3"><!--Inpur textarea per messaggio/Textarea for writing the message-->
+          <label for="message" class="form-label"><span class="required-star">*</span> Messaggio</label>
+          <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+          <div class="invalid-feedback">Per favore, inserisci qui il tuo messaggio</div>
+        </div>
+
+        <div class="form-check mb-3 pb-3"><!--Autorizzazione trattamento dati personali/Privacy authorization-->
+          <input class="form-check-input" type="checkbox" value="" id="checkAuthorization" required>
+          <label class="checkAuthorization" for="checkAuthorization">
+            <span class="required-star">*</span> Autorizzo il trattamento dei miei dati personali ai sensi del D. Lgs. 2018/101 e del GDPR (Regolamento UE 2016/679)
+          </label>
+          <div class="invalid-feedback">Per proseguire, è necessaria l&lsquo;autorizzazione al trattamento dei dati personali</div>
+          </label>
+        </div>
+
+        <div class="col-12 text-center mb-5 pb-2 pb-md-5"><!--Pulsante di invio e reset/Submit and reset buttons-->
+          <button class="btn btn-outline-primary final-contact-btn" type="submit">Invia</button>
+          <button class="btn btn-outline-primary final-contact-btn" type="reset">Ricomincia</button>
+        </div>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/thankyou.html" target="_blank">
+      </form>
+    </div>
+    <!--Fine del form/End of form-->
+
+  </div>
+  <!--Fine di content (il contenuto della pagina)/End of main content-->
+
+  <!--Footer-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-5 mt-md-4 mb-0 footer">
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
+        <span class="mb-3 mb-md-0 footer__copy">&copy; Copyright 2025</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><a href="https://www.linkedin.com/in/carla-manavella-3b079bb5/" aria-label="Instagram" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+        <li class="ms-3"><a href="https://github.com/Carlaisabelle" aria-label="GitHub" target="_blank"><i class="bi bi-github"></i></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+  <!--Fine del footer/End of footer-->
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>   
+  <script src="assets/checkRequired.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/cv.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <style>
+    /*Per dare un po' di stile */
+    body, html {
+      height: 100%;
+    }
+    .content {
+      min-height: 100vh; /* Fa in modo che il contenuto occupi almeno l'altezza della finestra */
+    }
+  </style>
+</head>
+<body>
+   <!--Contenuto principale della pagina-->
+   <!--Main content of the page-->
+
+   <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary shadow sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/sigla_cm.png" alt="CM" width="55">
+        </a>
+        <div class="navbar-link justify-content-end" role="navigation"><!--Con lo span, il menù si sposta verso destra / so this part sections moves on the right side of the page-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarlinks" aria-controls="navbarlinks" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-book"></i><!--Icona personalizzata/custom toggle icon-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarlinks">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Chi sono</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="cv.html" aria-current="page">Curriculum</a><!--Questa pagina è attiva/This page is active-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Progetti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contattami!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <!--Fine della navbar/End of navbar-->
+
+  <div class="page">
+    <!--Immagine titolo di pagina/Image used as page heading-->
+    <img class="cv-heading" src="assets/img/3.svg" alt="Curriculum" aria-label="heading" role="heading">
+    <!--Fine immagine titolo di pagina/End of image used as page heading-->
+
+    <section class="cv-container"><!--Container per il CV (fatto con sistema grid)/Container for the CV (built with a grid system)-->
+      <div class="cv-grid"><!--Grid del CV/CV grid-->
+
+        <!--Voce del CV/CV entry-->
+        <div class="cv-cventry">
+          <p class="cvdate">Da Gennaio 2024 a oggi</p>
+          <p class="cvposition">Corso per Blockchain e web developer</p>
+        </div>
+        <div class="cv-cvdescript">
+          <p>Corso ideato dalla piattaforma online Start2Impact per imparare a sviluppare soluzioni in blockchain. Competenze acquisite: sviluppo con Solidity, HTML, CSS, JavaScript, React e prompt engineering per AI.</p>
+        </div>
+        <!--Fine voce del CV/End of CV entry-->
+
+        <!--Voce del CV/CV entry-->
+        <div class="cv-cventry">
+          <p class="cvdate">Da luglio 2016 a maggio 2022</p>
+          <p class="cvposition">Responsabile redazione e contenuti internazionali</p>
+        </div>
+        <div class="cv-cvdescript">
+          <p>Traduzione e redazione di articoli per le riviste professionali &ldquo;Beauty Forum&rdquo; e &ldquo;Nailpro&rdquo;, social media manager e web master (con HTML e CMS &ldquo;Joomla&rdquo;).</p>
+        </div>
+        <!--Fine voce del cv/End of CV entry-->
+
+        <!--Voce del CV/CV entry-->
+        <div class="cv-cventry">
+          <p class="cvdate">Luglio 2016</p>
+          <p class="cvposition">Workshop Django Girls</p>
+        </div>
+        <div class="cv-cvdescript">
+          Workshop organizzato dall&rsquo;associazione &ldquo;Django Girls&rdquo; per imparare le basi di Python e del framework Django.
+        </div>
+        <!--Fine voce del CV/End of CV entry-->
+
+        <!--Voce del cv/CV entry-->
+        <div class="cv-cventry">
+          <p class="cvdate">Da ottobre 2014 ad aprile 2019</p>
+          <p class="cvposition">Laurea Magistrale in Lingue e Letterature Moderne</p>
+        </div>
+        <div class="cv-cvdescript">
+          <p>Laurea part-time conseguita all&rsquo;Università degli Studi di Torino. Competenze acquisite: alfabetizzazione di marketing e gestione aziendale, alfabetizzazione informatica applicata alla comunicazione multimediale, Diritto Internazionale, traduzione letteraria e scientifica.</p>
+        </div>
+        <!--Fine voce del CV/End of CV entry-->
+
+        <!--Voce del CV/CV entry-->
+        <div class="cv-cventry">
+          <p class="cvdate">Da dicembre 2015 a giugno 2016</p>
+          <p class="cvposition">Corso Online di elementi base di Java</p>
+        </div>
+        <div class="cv-cvdescript">
+          <p>Corso online (erogato dal sito &ldquo;Edx.org&rdquo; e ideato dall&rsquo;&ldquo;Universidad Carlos III&rdquo; di Madrid). Competenze acquisite: elementi base di programmazione con Java.</p>
+        </div>
+        <!--Fine voce del CV/End of CV entry-->
+
+        <!--Voce del CV/CV entry-->
+        <div class="cv-cventry">
+          <p class="cvdate">Da ottobre 2015 ad aprile 2016</p>
+          <p class="cvposition">Master in traduzione settoriale</p>
+        </div>
+        <div class="cv-cvdescript">
+          <p>Master online erogato dalla Scuola Superiore per Interpreti e Traduttori di Pescara. Competenze acquisite: traduzione legale, traduzione tecnica (es. libretti di istruzioni) e traduzione per il web, dall&rsquo;italiano all&rsquo;inglese e dall&rsquo;inglese all&rsquo;italiano.</p>
+        </div>
+        <!--Fine voce del CV/End of CV entry-->
+      
+      </div><!--Fine grid del CV/End of CV grid-->
+    </section><!--Fine CV fatto con sistema grid/End of CV built with grid system--> 
+  </div><!--Fine di content (il contenuto della pagina)/End of main content-->
+
+  <!--Footer-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-5 mt-md-4 mb- footer">
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
+        <span class="mb-3 mb-md-0 footer__copy">&copy; Copyright 2025</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><a href="https://www.linkedin.com/in/carla-manavella-3b079bb5/" aria-label="Instagram" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+        <li class="ms-3"><a href="https://github.com/Carlaisabelle" aria-label="GitHub" target="_blank"><i class="bi bi-github"></i></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+  <!--Fine del footer/End of footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

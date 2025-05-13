@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progetti</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+<body>
+
+  <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary shadow sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/sigla_cm.png" alt="CM" width="55">
+        </a>
+        <div class="navbar-link justify-content-end" role="navigation"><!--Così il menù si sposta verso destra/This moves the section on the right side of the page-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarlinks" aria-controls="navbarlinks" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-book"></i><!--Icona personalizzata/Custom toggle icon-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarlinks">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Chi sono</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">Curriculum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="projects.html" aria-current="page">Progetti</a><!--La pagina è attiva/This page is active-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contattami!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <!--Fine della navbar/End of navbar-->
+
+  <!--Contenuto principale della pagina/Main content of the page-->
+  <div class="page mx-5">
+
+    <!--Immagine titolo di pagina/Image used as page heading-->
+    <div class="text-center mt-1 mx-auto title title--projects">
+      <img src="assets/img/4.svg" alt="Progetti" class="img-fluid title__image" aria-label="heading" role="heading">
+    </div>
+    <!--Fine immagine usata come titolo di pagina/End of image used as page heading-->
+
+    <!--I progetti/The projects-->
+
+    <!--Progetto n.1 con immagine a SINISTRA/Project n.1 with LEFT image-->
+    <div class="container text-center my-5 project">
+      <!--Row che contiene il progetto/Row containing the project-->
+      <div class="row d-flex flex-row align-items-center justify-content-center">
+        <!--Immagine del progetto/Project image-->
+        <div class="col-12 col-sm-6 col-lg-4 justify-content-center">
+          <img src="assets/img/Prj-RaccoltaFondi.png" alt="Raccolta fondi su Ethereum" class="img-fluid project__image">
+        </div>
+        <!--Titolo e descrizione del progetto/Project title and description-->
+        <div class="col-12 col-sm-6 col-lg-4 justify-item-center">
+          <h5 class="pt-3 pt-sm-0 project__head">Raccolta fondi</h5>
+          <p class="project__description">Il mio primo progetto con Solidity: uno smart contract per una raccolta fondi su blockchain Ethereum.</p>
+          <!--Icone della presentazione PDF e del link GitHub/PDF presentation and GitHub page icon links-->
+          <div class="container text-center">
+            <div class="row d-flex align-items-center justify-items-evenly mx-auto">
+              <!--Pagina GitHub del progetto/GitHub project page-->
+              <div class="col-6">
+                <a href="https://github.com/Carlaisabelle/MyFirstSolidityProject" class="icon-link icon-link-hover" target="_blank">
+                  <i class="bi bi-github"></i>                
+                </a>
+              </div>
+              <!--Presentazione PDF/PDF presentation-->
+              <div class="col-6">
+                <a href="assets/pdf/Blockchain-raccolta_fondi.pdf" class="icon-link icon-link-hover" target="_blank">
+                  <i class="bi bi-file-earmark-pdf-fill"></i>                
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fine del progetto n.1 con immagine a SINISTRA/End of project n.1 with LEFT image-->
+
+    <!--Divisore tra i progetti/Horizontal rule to divide projects-->
+    <div class="container mx-auto project__divider">
+      <hr class="border border-primary border-1">
+    </div>
+    <!--Fine divisore/End of horizontal rule-->
+
+    <!--Progetto n.2 con immagine a DESTRA/Project n.2 with DESTRA image-->
+    <div class="container text-center my-5 project">
+      <div class="row d-flex flex-row flex-sm-row-reverse align-items-center justify-content-center">
+        <div class="col-12 col-sm-6 col-lg-4 justify-content-center">
+          <!--Immagine del progetto/Project image-->
+          <img src="assets/img/Prj-GreenEarth_v1.png" alt="Raccolta fondi su Ethereum" class="img-fluid project__image">
+        </div>
+        <!--Titolo e descrizione del progetto/Project title and description-->
+        <div class="col-12 col-sm-6 col-lg-4 justify-item-center">
+          <h5 class="pt-3 pt-sm-0 project__head">GreenEarth v.1</h5>
+          <p class="project__description">Prima versione di un sito per una startup ambientale inventata (&ldquo;GreenEarth&rdquo;) scritto con HTML e CSS.</p>
+          <!--Icone della presentazione PDF e del link GitHub/PDF presentation and GitHub page icon links-->
+          <div class="container text-center">
+            <div class="row d-flex align-items-center justify-items-evenly mx-auto">
+              <!--Pagina GitHub del progetto/GitHub project page-->
+              <div class="col-6">
+                <a href="#" class="icon-link icon-link-hover" target="_blank">
+                  <i class="bi bi-github"></i>                
+                </a>
+              </div>
+              <!--Presentazione PDF/PDF presentation-->
+              <div class="col-6" hidden>
+                <a href="#" class="icon-link icon-link-hover" target="_blank">
+                  <i class="bi bi-file-earmark-pdf-fill"></i>                
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fine del progetto n.2 con immagine a DESTRA/End of project n.2 with RIGHT image-->
+
+    <!--Divisore tra i progetti/Horizontal rule to divide projects-->
+    <div class="container mx-auto project__divider">
+      <hr class="border border-primary border-1">
+    </div>
+    <!--Fine divisore/End of horizontal rule-->
+
+    <!--Progetto n.3 con immagine a SINISTRA/Project with LEFT image-->
+    <div class="container text-center my-5 project">
+      <div class="row d-flex flex-row align-items-center justify-content-center">
+        <!--Immagine del progetto/Project image-->
+        <div class="col-12 col-sm-6 col-lg-4 justify-content-center">
+          <img src="assets/img/Prj-GreenEarth_v2.png" alt="Sito per startup GreenEarth" class="img-fluid project__image">
+        </div>
+        <!--Titolo e descrizione del progetto/Project title and description-->
+        <div class="col-12 col-sm-6 col-lg-4 justify-item-center">
+          <h5 class="pt-3 pt-sm-0 project__head">GreenEarth v.2</h5>
+          <p class="project__description">Seconda versione di un sito per una startup ambientale inventata (&ldquo;GreenEarth&rdquo;) scritto con HTML e CSS e creato con Bootstrap e SASS.</p>
+          <!--Icone della presentazione PDF e del link GitHub/PDF presentation and GitHub page icon links-->
+          <div class="container text-center">
+            <div class="row d-flex align-items-center justify-items-evenly mx-auto">
+              <!--Pagina GitHub del progetto/GitHub project page-->
+              <div class="col-6">
+                <a href="#" class="icon-link icon-link-hover" target="_blank">
+                  <i class="bi bi-github"></i>                
+                </a>
+              </div>
+              <!--Presentazione PDF/PDF presentation-->
+              <div class="col-6" hidden>
+                <a href="#" class="icon-link icon-link-hover">
+                  <i class="bi bi-file-earmark-pdf-fill"></i>                
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fine del progetto n.3 con immagine a SINISTRA/End of project n.3 with LEFT image-->
+
+    <!--Divisore tra i progetti/Horizontal rule to divide projects-->
+    <div class="container mx-auto project__divider">
+      <hr class="border border-primary border-1">
+    </div>
+    <!--Fine divisore/End of horizontal rule-->
+  
+    <!--Progetto n.4 con immagine a DESTRA/Project n.4 with DESTRA image-->
+    <div class="container text-center my-5 project">
+      <div class="row d-flex flex-row flex-sm-row-reverse align-items-center justify-content-center">
+        <!--Immagine del progetto/Project image-->
+        <div class="col-12 col-sm-6 col-lg-4 justify-content-center">
+          <img src="assets/img/Prj-MySite.png" alt="Sito portfolio di Carla Manavella" class="img-fluid project__image">
+        </div>
+        <!--Titolo e descrizione del progetto/Project title and description-->
+        <div class="col-12 col-sm-6 col-lg-4 justify-item-center">
+          <h5 class="pt-3 pt-sm-0 project__head">Questo sito</h5>
+          <p class="project__description">Questo sito, scritto in HTML e CSS e creato usando Bootstrap e SASS.</p>
+          <!--Icone della presentazione e del link GitHub/PDF presentation and GitHub page icon links-->
+          <div class="container text-center">
+            <div class="row d-flex align-items-center justify-items-evenly mx-auto">
+              <!--Pagina GitHub del progetto/GitHub page-->
+              <div class="col-6">
+                <a href="#" class="icon-link icon-link-hover" target="_blank">
+                  <i class="bi bi-github"></i>                
+                </a>
+              </div>
+              <!--Presentazione PDF/PDF presentation-->
+              <div class="col-6">
+                <a href="assets/pdf/MySite.pdf" class="icon-link icon-link-hover" target="_blank">
+                  <i class="bi bi-file-earmark-pdf-fill"></i>                
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fine del progetto n.4 con immagine a DESTRA/End of project n.4 with RIGHT image-->
+
+    <!--Fine di content (il contenuto della pagina)/End of page content-->
+    </div>
+
+  <!--Footer-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-5 mt-md-4 footer">
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
+        <span class="mb-3 mb-md-0 footer__copy">&copy; Copyright 2025</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><a class="footer__icon" href="https://www.linkedin.com/in/carla-manavella-3b079bb5/" aria-label="Instagram" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+        <li class="ms-3"><a class="footer__icon" href="https://github.com/Carlaisabelle" aria-label="GitHub" target="_blank"><i class="bi bi-github"></i></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+  <!--Fine del footer/End of footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

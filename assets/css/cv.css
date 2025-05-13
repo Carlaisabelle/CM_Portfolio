@@ -1,0 +1,80 @@
+/* NB.: La pagina "CV" ha un CSS a sé perché il progetto per il quale è stato costruito il sito richiedeva
+che questa pagina fosse scritta solamente usando HTML e CSS, senza ricorrere a Bootstrap o SASS */
+/* The "CV" page has its own CSS file because this was required by the project for which this site has been created.
+The requirement stated that "cv.html" page had to be built only with HTML and CSS, and with neather Bootstrap nor SASS */
+
+
+/* Immagine usata come titolo di pagina/Image used as page heading */
+.cv-heading {
+    margin: 4vh auto 0 auto;
+    display: flex;
+    justify-items: center;
+}
+
+/* Classe per la data all'interno del CV/Class for the date inside the CV */
+.cvdate {
+    font-weight: bold;
+}
+
+/* Classe per il nome della posizione all'interno del CV/Class for the position name inside the CV */
+.cvposition {
+    font-style: italic;
+}
+
+/* Container dentro cui è racchiuso il grid del CV/Container inside wich the CV grid resides */
+.cv-container {
+    margin: auto 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+/* Grid */
+.cv-grid {
+    display: grid;
+    grid-template-columns: [first] 25% [half] 60% [last];
+    grid-template-rows: repeat(auto, minmax(auto)); /* In questo modo, il numero delle righe si aggiorna in automatico/This way, the row number is automatically updated */
+    column-gap: 3vw;
+    row-gap: 4vh;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+/* Per la costruzione del grid, affido la distribuzione degli item alle classi "-cventry" e "-cvdescript" e quando devo aggiungere una nuova voce al cv, mi basta inserirla nell'HTML e il CSS farà il lavoro per me. */
+/* I built the grid using the "-cventry" and "-cvdescrpt" classes; this allows me to simply add a new entry on the HTML without worrying about its positioning. */
+
+/* Allineamento del testo e posizione nella column da applicare a tutti i "-cventry"/Text alignment and positioning inside the column for all the "-cventry" */
+[class*="-cventry"] {
+    grid-column: [first];
+    align-self: center;
+    justify-self: end;
+    text-align: end;
+}
+
+/* Allineamento del testo e posizione nella column da applicare a tutti i "-cvdescript"/Text alignment and positioning inside the column for all the "-cvdescript" */
+[class*="-cvdescript"] {
+    grid-column: [half];
+    align-self: center;
+    text-align: start;
+}
+
+/* Media queries per rendere responsive l'immagine del titolo (per usare sempre la stessa)/Media queries to make the heading-image responsive (this way, I don't have to upload new images with different sizes) */ 
+@media only screen and (max-width: 480px) { 
+    .cv-heading {
+        justify-self: center;
+        width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .cv-heading {
+        justify-self: center;
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1190px) {
+    .cv-heading {
+        justify-self: center;
+        width: 60vw;
+    }
+}
