@@ -6061,11 +6061,11 @@ textarea.form-control-lg {
   justify-content: center;
   width: 15%;
   padding: 0;
-  color: #fff;
+  color: #6f42c1;
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -6077,7 +6077,7 @@ textarea.form-control-lg {
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: #6f42c1;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -6094,19 +6094,19 @@ textarea.form-control-lg {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
 }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")*/;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236f42c1'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236f42c1'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")*/;
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")*/;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236f42c1'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236f42c1'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")*/;
 }
 
 .carousel-indicators {
@@ -6125,14 +6125,14 @@ textarea.form-control-lg {
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
+  width: 35px;
+  height: 5px;
   padding: 0;
   margin-right: 3px;
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #6f42c1;
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
@@ -12030,6 +12030,10 @@ strong {
   font-style: normal;
 }
 
+.page-heading {
+  display: none;
+}
+
 .title--about {
   padding-top: 1.5rem;
 }
@@ -12116,6 +12120,26 @@ strong {
   color: #9999ff;
 }
 
+.separation-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #ccccff;
+}
+
+.separation-line::after {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  padding-top: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #ccccff;
+}
+
 .hello {
   text-justify: center;
 }
@@ -12126,6 +12150,10 @@ strong {
 .hello__description {
   font-weight: 300;
   font-size: x-large;
+}
+.hello__myStory {
+  font-style: 300;
+  font-size: large;
 }
 .hello__image {
   width: 95%;
@@ -12139,58 +12167,71 @@ strong {
   }
 }
 
-.homemenu {
+.mainHomeContent {
   margin-top: 0.5rem;
 }
-.homemenu__buttoncontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 0%;
+.mainHomeContent i {
+  font-size: 0.8rem;
+  color: #ccccff;
 }
-@media (max-width: 767.98px) {
-  .homemenu__buttoncontainer {
-    flex-wrap: wrap;
-    width: 90vw;
-    margin-top: 1.5rem;
-    padding-bottom: 2.5rem;
-  }
-}
-.homemenu__button {
-  padding-top: 0.25rem;
-  border: none;
-  background: none;
-}
-.homemenu__button a {
+.mainHomeContent__title-section {
   font-family: "Oooh Baby", cursive;
   font-size: 1.8rem;
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-.homemenu__button:hover {
-  background-color: #9999ff;
-  border-color: #9999ff;
+.mainHomeContent__contact {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
-.homemenu__button:hover a {
-  color: #fff;
+.mainHomeContent__contact a {
   text-decoration: none;
+}
+.mainHomeContent__contact a h2, .mainHomeContent__contact a .h2 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+.mainHomeContent__contact a i {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ccccff;
+}
+
+.carousel {
+  border: 1px solid #ccccff;
+}
+
+.carousel-item {
+  position: relative;
+}
+.carousel-item .carousel-info {
+  background-color: rgba(204, 204, 255, 0.85);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.carousel-item .carousel-info .carousel-caption h5, .carousel-item .carousel-info .carousel-caption .h5 {
+  font-family: "Oooh Baby", cursive;
   font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
 }
-@media (min-width: 768px) {
-  .homemenu__button {
-    width: 20vw;
-  }
+.carousel-item .carousel-info .carousel-caption p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
 }
-@media (max-width: 575.98px) {
-  .homemenu__picture {
-    width: 80vw;
-  }
-}
-@media (min-width: 768px) {
-  .homemenu__picture {
-    width: 50vw;
-  }
+.carousel-item:hover .carousel-info {
+  opacity: 2;
+  visibility: visible;
+  transition: 300ms;
+  transition-property: all;
 }
 
 @media (max-width: 991.98px) {
