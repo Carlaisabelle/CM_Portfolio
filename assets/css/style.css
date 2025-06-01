@@ -12147,7 +12147,7 @@ strong {
   font-weight: 400;
   font-size: xx-large;
 }
-.hello__description {
+.hello__catchphrase {
   font-weight: 300;
   font-size: x-large;
 }
@@ -12162,7 +12162,7 @@ strong {
   .hello__name {
     font-size: x-large;
   }
-  .hello__description {
+  .hello__catchphrase {
     font-size: x-large;
   }
 }
@@ -12190,7 +12190,6 @@ strong {
 }
 .mainHomeContent__contact a h2, .mainHomeContent__contact a .h2 {
   font-size: 5rem;
-  font-weight: 800;
 }
 .mainHomeContent__contact a i {
   font-size: 3rem;
