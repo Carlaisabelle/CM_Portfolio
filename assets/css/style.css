@@ -12181,20 +12181,29 @@ strong {
   color: #000;
   text-decoration: none;
 }
-.mainHomeContent__contact {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+
+.linkToContact {
+  margin: 10vh auto;
 }
-.mainHomeContent__contact a {
+.linkToContact a {
+  font-family: "Oooh Baby", cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #000;
   text-decoration: none;
 }
-.mainHomeContent__contact a h2, .mainHomeContent__contact a .h2 {
-  font-size: 5rem;
-}
-.mainHomeContent__contact a i {
-  font-size: 3rem;
+.linkToContact i {
+  font-size: 4rem;
   font-weight: bold;
   color: #ccccff;
+}
+@media (max-width: 767.98px) {
+  .linkToContact a {
+    font-size: 3.5rem;
+  }
+  .linkToContact i {
+    font-size: 2.5rem;
+  }
 }
 
 .carousel {
