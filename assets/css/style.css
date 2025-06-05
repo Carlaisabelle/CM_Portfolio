@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 :root,
 [data-bs-theme=light] {
@@ -11989,6 +11990,16 @@ body, html {
   font-style: normal;
 }
 
+.coming-soon-regular {
+  font-family: "Coming Soon", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cursiveStyle {
+  font-family: "Coming Soon", cursive;
+}
+
 .poppins-light {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -12078,22 +12089,25 @@ strong {
 }
 
 .nav-link {
-  font-family: "Oooh Baby", cursive;
+  font-size: 130%;
+  font-weight: 600;
   color: #000;
-  font-size: 150%;
-  font-weight: 550;
 }
 .nav-link:hover {
-  color: #1741c3;
-  font-weight: bold;
+  color: #fff;
+  font-size: 145%;
   cursor: pointer;
 }
 .nav-link:focus {
-  color: #1a49da;
+  color: #fff;
+  font-size: 145%;
+  cursor: pointer;
 }
 
-.active {
-  font-weight: bold;
+.nav-item--navActive {
+  color: #6f42c1;
+  font-size: 135%;
+  font-weight: 900;
 }
 
 .navbar-toggler {
@@ -12106,10 +12120,14 @@ strong {
   border-top: 1px solid #ccccff;
 }
 .footer__copy {
-  font-family: "Oooh Baby", cursive;
-  font-size: 130%;
+  font-size: 110%;
   font-weight: bold;
   color: #000;
+}
+@media (max-width: 767.98px) {
+  .footer__copy {
+    font-size: 95%;
+  }
 }
 .footer i {
   font-size: 1.5rem;
@@ -12155,15 +12173,22 @@ strong {
   font-style: 300;
   font-size: large;
 }
+.hello__imagebox {
+  display: flex;
+  align-items: center;
+}
 .hello__image {
-  width: 95%;
+  width: 80%;
 }
 @media (max-width: 767.98px) {
-  .hello__name {
+  .hello__name, .hello__catchphrase {
     font-size: x-large;
   }
-  .hello__catchphrase {
-    font-size: x-large;
+  .hello__imagebox {
+    margin-top: 5vh;
+  }
+  .hello__image {
+    width: 95%;
   }
 }
 
@@ -12175,34 +12200,14 @@ strong {
   color: #ccccff;
 }
 .mainHomeContent__title-section {
-  font-family: "Oooh Baby", cursive;
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 600;
   color: #000;
   text-decoration: none;
 }
-
-.linkToContact {
-  margin: 10vh auto;
-}
-.linkToContact a {
-  font-family: "Oooh Baby", cursive;
-  font-size: 5rem;
-  font-weight: bold;
-  color: #000;
-  text-decoration: none;
-}
-.linkToContact i {
-  font-size: 4rem;
-  font-weight: bold;
-  color: #ccccff;
-}
-@media (max-width: 767.98px) {
-  .linkToContact a {
-    font-size: 3.5rem;
-  }
-  .linkToContact i {
-    font-size: 2.5rem;
+@media (max-width: 991.98px) {
+  .mainHomeContent__womanPicture {
+    width: 95%;
   }
 }
 
@@ -12224,13 +12229,11 @@ strong {
   visibility: hidden;
 }
 .carousel-item .carousel-info .carousel-caption h5, .carousel-item .carousel-info .carousel-caption .h5 {
-  font-family: "Oooh Baby", cursive;
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 600;
   color: #fff;
 }
 .carousel-item .carousel-info .carousel-caption p {
-  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
@@ -12240,6 +12243,29 @@ strong {
   visibility: visible;
   transition: 300ms;
   transition-property: all;
+}
+
+.linkToContact {
+  margin: 10vh auto;
+}
+.linkToContact a {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+}
+.linkToContact i {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ccccff;
+}
+@media (max-width: 767.98px) {
+  .linkToContact a {
+    font-size: 3rem;
+  }
+  .linkToContact i {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -12268,8 +12294,7 @@ strong {
   border: 0.5px dotted gray;
 }
 .project__head {
-  font-family: "Oooh Baby", cursive;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   .project__head {
@@ -12291,13 +12316,15 @@ strong {
   color: #8080ff;
 }
 
-.form-label, .final-contact-btn {
-  font-family: "Oooh Baby", cursive;
-}
-
 .form-label {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 150%;
+  margin-top: 2.25vh;
+}
+@media (max-width: 767.98px) {
+  .form-label {
+    font-size: 120%;
+  }
 }
 
 .required-star {
@@ -12308,7 +12335,7 @@ strong {
 .final-contact-btn {
   font-size: 130%;
   border: 2px solid #ccccff;
-  font-weight: bold;
+  font-weight: 600;
   width: 7em;
   color: black;
 }
@@ -12334,7 +12361,7 @@ strong {
   }
 }
 .emailSuccess--thankyou {
-  font-family: "Oooh Baby", cursive;
+  font-family: "Coming Soon", cursive;
   font-size: 3vh;
   font-weight: 500;
 }
