@@ -12188,6 +12188,7 @@ strong {
     margin-top: 5vh;
   }
   .hello__image {
+    margin-bottom: 2.5vh;
     width: 95%;
   }
 }
@@ -12205,10 +12206,50 @@ strong {
   color: #000;
   text-decoration: none;
 }
-@media (max-width: 991.98px) {
-  .mainHomeContent__womanPicture {
-    width: 95%;
+.mainHomeContent__skillContainer i {
+  font-size: 3rem;
+  color: #b3b3ff;
+}
+.mainHomeContent__skillContainer h5, .mainHomeContent__skillContainer .h5 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.mainHomeContent__skillContainer p {
+  font-size: large;
+  font-weight: 400;
+}
+.mainHomeContent__skillContainer p i {
+  color: #ccccff;
+  font-size: smaller;
+}
+.mainHomeContent__skillContainer p .inStudio {
+  font-style: italic;
+  font-size: smaller;
+}
+.mainHomeContent__linkToContact {
+  margin: 5vh auto;
+}
+.mainHomeContent__linkToContact a {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+}
+.mainHomeContent__linkToContact i {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ccccff;
+}
+@media (max-width: 767.98px) {
+  .mainHomeContent__linkToContact a {
+    font-size: 3rem;
   }
+  .mainHomeContent__linkToContact i {
+    font-size: 2.5rem;
+  }
+}
+.mainHomeContent__womanPicture {
+  height: 90%;
 }
 
 .carousel {
@@ -12245,29 +12286,6 @@ strong {
   transition-property: all;
 }
 
-.linkToContact {
-  margin: 10vh auto;
-}
-.linkToContact a {
-  font-size: 4rem;
-  font-weight: 800;
-  color: #000;
-  text-decoration: none;
-}
-.linkToContact i {
-  font-size: 4rem;
-  font-weight: bold;
-  color: #ccccff;
-}
-@media (max-width: 767.98px) {
-  .linkToContact a {
-    font-size: 3rem;
-  }
-  .linkToContact i {
-    font-size: 2.5rem;
-  }
-}
-
 @media (max-width: 991.98px) {
   .about__text {
     text-align: center;
@@ -12294,7 +12312,7 @@ strong {
   border: 0.5px dotted gray;
 }
 .project__head {
-  font-weight: 500;
+  font-weight: 800;
 }
 @media (min-width: 768px) {
   .project__head {
